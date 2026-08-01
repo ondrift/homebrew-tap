@@ -6,10 +6,16 @@ The Homebrew tap for [Drift](https://ondrift.eu).
 brew install ondrift/tap/drift
 ```
 
-or tap once and install by bare name:
+That is the whole thing. Naming the tap in the command tells Homebrew you trust
+it, so there is no extra step.
+
+If you would rather tap once and install by bare name, Homebrew needs the trust
+granted explicitly first — a tap it has never been told to trust is refused,
+not prompted:
 
 ```sh
 brew tap ondrift/tap
+brew trust ondrift/tap
 brew install drift
 ```
 
