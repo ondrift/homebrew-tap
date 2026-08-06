@@ -3,28 +3,28 @@
 class Drift < Formula
   desc "CLI for Drift — the European serverless platform"
   homepage "https://ondrift.eu"
-  version "0.4.3"
+  version "0.4.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.4.3/drift_v0.4.3_darwin_arm64.tar.gz"
-      sha256 "cea4c140c8bd6a16b32fb3741cb9e48ba45e2932bb225f87d489d04588577144"
+      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.4.4/drift_v0.4.4_darwin_arm64.tar.gz"
+      sha256 "90d192f9c68ac7fb0341dc09005ca24d6d14e75e0833b88663e82d2aef01d1b8"
     end
     on_intel do
-      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.4.3/drift_v0.4.3_darwin_amd64.tar.gz"
-      sha256 "7dcbaab2fbb5e457c1d28cfe7aecde31ebb0e86ff45b8e6d68b03766af75f7e1"
+      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.4.4/drift_v0.4.4_darwin_amd64.tar.gz"
+      sha256 "4c4f158fc7210517c144e596a29d1e54ccb8c1f3defad2e64059fd63da2445af"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.4.3/drift_v0.4.3_linux_arm64.tar.gz"
-      sha256 "e8c80ee6631272b30fa81530dd09189f10af1fb1dd85a50d0dd546bc71d6da2e"
+      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.4.4/drift_v0.4.4_linux_arm64.tar.gz"
+      sha256 "687a4d061afc5d9e105fe93105241fd1ac1d93d168a64ed3918978fabd2d8b11"
     end
     on_intel do
-      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.4.3/drift_v0.4.3_linux_amd64.tar.gz"
-      sha256 "61fe428ebc14feb9fd5f5b0fe48c5d1445d41deaec0ba04b5045d16f41cb8835"
+      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.4.4/drift_v0.4.4_linux_amd64.tar.gz"
+      sha256 "044f420c6b506d9432ee744b4dfdc54b251e1d4da59d0acff8a9cf008daeeebb"
     end
   end
 
@@ -33,6 +33,6 @@ class Drift < Formula
   end
 
   test do
-    assert_match "drift v0.4.3", shell_output("#{bin}/drift --version")
+    assert_match "drift v0.4.4", shell_output("#{bin}/drift --version")
   end
 end
