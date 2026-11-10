@@ -3,28 +3,28 @@
 class Drift < Formula
   desc "CLI for Drift — the European serverless platform"
   homepage "https://ondrift.eu"
-  version "0.84.0"
+  version "0.85.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.84.0/drift_v0.84.0_darwin_arm64.tar.gz"
-      sha256 "7baf3fcda4d01a2f15dc13e04c3e41a49653b87f5a99005e767d6ed45566c2d9"
+      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.85.0/drift_v0.85.0_darwin_arm64.tar.gz"
+      sha256 "9af503de5d7760b5dbcf108069eb6db2c34ab6527525de8ec582b2984055d804"
     end
     on_intel do
-      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.84.0/drift_v0.84.0_darwin_amd64.tar.gz"
-      sha256 "c173455904ccb7c591533ab6dc06cc2e9b8a765996bb0d565662ee6481ef5d58"
+      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.85.0/drift_v0.85.0_darwin_amd64.tar.gz"
+      sha256 "5619e9737a5b0cc56af6188a60a7a6dd999f72e669c31a25c4b7ecc658b0fbf1"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.84.0/drift_v0.84.0_linux_arm64.tar.gz"
-      sha256 "69f79d93a9e82205899aa5d8ba13aad717bbb12c040e38007b1b8057345f878c"
+      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.85.0/drift_v0.85.0_linux_arm64.tar.gz"
+      sha256 "b922bbb09356bf8d01b33dedc0c529eb5961888ec9f1ac9c79901fde1a44a06e"
     end
     on_intel do
-      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.84.0/drift_v0.84.0_linux_amd64.tar.gz"
-      sha256 "ac8dfbdf129beab9383c34ce864c2b823b41bbd0e234e6db491d5b96323d7f6f"
+      url "https://github.com/ondrift/cloud/releases/download/cli%2Fv0.85.0/drift_v0.85.0_linux_amd64.tar.gz"
+      sha256 "6b9add24615f25f123fdec4bf9681475a8812426fbeddd8b993084ad20161e15"
     end
   end
 
@@ -33,6 +33,6 @@ class Drift < Formula
   end
 
   test do
-    assert_match "drift v0.84.0", shell_output("#{bin}/drift --version")
+    assert_match "drift v0.85.0", shell_output("#{bin}/drift --version")
   end
 end
